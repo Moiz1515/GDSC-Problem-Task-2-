@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: red;
+    height: fit-content;
+    overflow-x: hidden;
+}
+
+.bg-2 {
+    position: relative;
+}
+
+.bg-2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(27, 18, 18, 0.637);
+    z-index: -999;
+}
+
+@media(max-width: 767px) {
+    .bg-2::before {
+        background: none;
+    }
+}
+
+/*Navbar Starts*/
+.navbar .navbar-brand {
+    color: red;
+    font-weight: 600;
+}
+
+.navbar .navbar-brand:hover {
+    color: red;
+}
+
+.bg-dark,
+.navbar-dark {
+    background-color: black !important;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: inherit;
+    /* Use the inherited color on hover */
+    text-decoration: none;
+    /* Remove underline on hover */
+}
+
+@media (max-width: 768px) {
+
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*Navbar End*/
+
+/*About Me Start*/
+
+.pic {
+    /* height: 450px; */
+    width: 300px;
+    border-right: 10px solid red;
+    border-radius: 90px;
+}
+
+h4 {
+    color: red;
+
+}
+
+h3 {
+    color: white;
+
+}
+
+p {
+    color: white;
+}
+
+.about a {
+    color: white;
+    background-color: red;
+    padding: 8px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/*About Me End*/
+
+/*
+
+ .custom-box { 
+    padding-left: 290px;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(27, 18, 18);
+}
+*/
+/*Services Start*/
+
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.fa-solid {
+    color: white;
+}
+
+.fa-brands {
+    color: white;
+}
+
+.box-black {
+    background-color: rgb(27, 18, 18);
+}
+
+.box-red {
+    background-color: red;
+
+}
+
+.box-black i,
+.box-red i {
+    font-size: 40px;
+    color: red;
+}
+
+.box-red i {
+    color: white;
+}
+
+.box a {
+    text-decoration: none;
+    color: white;
+}
+
+.box-black:hover {
+    background-color: red;
+}
+
+.box-black:hover i {
+    color: white;
+}
+
+.boxes {
+    background-color: rgb(27, 18, 18);
+    padding: 20px;
+}
+
+.small-p {
+    font-size: 25px;
+    font-weight: 700;
+    color: red;
+}
+
+.big-p {
+    font-weight: 500;
+}
+
+.small-p-2 {
+    font-size: 45px;
+    font-weight: bolder;
+    color: red;
+    margin-bottom: 0px;
+}
+
+.big-p-2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+/*Services End*/
+
+/*Projects Start*/
+
+.project-main i{
+    font-size: 24px;
+}
+
+h5 {
+    color: white;
+}
+
+hr {
+    color: red;
+    border-bottom: 3px solid;
+}
+
+
+/*Projects End*/
+
+/*Footer Start*/
+
+footer h4{
+    font-size: 16px;
+}
+/*Footer End*/
